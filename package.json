@@ -1,0 +1,30 @@
+{
+  "name": "bs4_starter_pack",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeselAbaya/Bootstrap-learning.git"
+  },
+  "author": "Antay Juskovets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VeselAbaya/Bootstrap-learning/issues"
+  },
+  "homepage": "https://github.com/VeselAbaya/Bootstrap-learning#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
