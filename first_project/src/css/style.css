@@ -1,0 +1,27 @@
+body {
+  background: #333;
+  color: #fff; }
+
+.navbar {
+  border-bottom: #009fe7 2px solid;
+  opacity: 0.8; }
+
+#home-section {
+  background: url("../img/home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 535px; }
+  #home-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 535px; }
+  #home-section .home-inner {
+    padding-top: 95px; }
+  #home-section .card-form {
+    opacity: 0.8; }
+  #home-section .fa {
+    color: #009fe7;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 8px; }
