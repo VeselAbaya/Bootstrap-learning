@@ -2,7 +2,7 @@ $bg-color: #333;
 $font-colot: #fff;
 $primary-color: #009fe7;
 $dark-overlay: rgba(0, 0, 0, 0.7);
-$font-size: 20px;
+$icon-size: 20px;
 
 body {
   background: $bg-color;
@@ -38,7 +38,33 @@ body {
     background: #fff;
     padding: 4px;
     border-radius: 5px;
-    font-size: $font-size;
+    font-size: $icon-size;
     margin-top: 8px;
   }
+}
+
+#explore-section, #share-section {
+  .fa {
+    color: white;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#create-section {
+  .fa {
+    color: #333;
+    background: white;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+footer {
+  .modal-dialog {
+       top: 5%;
+   }
 }
