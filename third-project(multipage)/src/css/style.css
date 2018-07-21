@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  #dropdownNavItem {
+    order: -1; }
+  #upperAction {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  #middleAction {
+    border-radius: 0; }
+  #lowerAction {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; } }
+
+#searchInput {
+  border: 0px solid #ced4da; }
