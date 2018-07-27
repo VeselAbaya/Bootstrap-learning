@@ -94,3 +94,33 @@ body {
     }
   }
 }
+
+#services {
+  .services__features {
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    margin-right: 5%;
+  }
+}
+
+#faq {
+  .card {
+    border: #444;
+
+   button {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .card-body, .card-header {
+    background-color: #333;
+  }
+
+  .card-body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+}

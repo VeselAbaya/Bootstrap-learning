@@ -70,3 +70,22 @@ body {
 @media (min-width: 992px) {
   #about .about-img {
     margin-top: -50px; } }
+
+#services .services__features {
+  display: flex;
+  align-items: center; }
+
+#services i {
+  margin-right: 5%; }
+
+#faq .card {
+  border: #444; }
+  #faq .card button {
+    color: white;
+    text-decoration: none; }
+
+#faq .card-body, #faq .card-header {
+  background-color: #333; }
+
+#faq .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
