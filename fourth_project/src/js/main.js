@@ -14,8 +14,7 @@ $(document).ready(function() {
   });
 
   /////////////////////////////////////////
-  let windowSize = $(window).height();
-  if ($('body').height() < windowSize) {
+  if ($('html').height() < $(window).height()) {
     $('footer').css({
       'position': 'absolute',
       'left': 0,
@@ -25,17 +24,21 @@ $(document).ready(function() {
   }
 
   $(window).resize(function() {
-    if ($('body').height() < windowSize) {
+    if ($('html').height() < $(window).height()) {
       $('footer').css({
         'position': 'absolute',
         'left': 0,
         'bottom': 0,
         'width': '100%'
       })
+    } else {
+      $('footer').css({
+        'position': 'relative',
+      })
     }
   })
 
-  ////////////////////////////////////////// 
+  //////////////////////////////////////////
   $('.slider').slick({
     infinite: true,
     slideToShow: 1,
