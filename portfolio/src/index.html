@@ -31,10 +31,10 @@
               Experienced full-stack Web Developer
             </div>
             <div class="d-flex flex-row text-white text-center align-items-stretch">
-              <div class="port-item p-4 bg-primary">
+              <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
                 <i class="fa fa-home d-block"></i> Home
               </div>
-              <div class="port-item p-4 bg-success">
+              <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                 <i class="fa fa-graduation-cap d-block"></i> Resume
               </div>
               <div class="port-item p-4 bg-warning">
@@ -48,10 +48,126 @@
         </div>
       </div>
     </header>
+
+    <!-- HOME -->
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Welcome to my page</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, facilis, error?</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>My skills</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tempore perferendis eaque provident dolorum accusamus.</p>
+        <hr>
+        <h4>HTML</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%;"></div>
+        </div>
+        <h4>CSS</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%;"></div>
+        </div>
+        <h4>JS</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:92%;"></div>
+        </div>
+        <h4>PHP</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:79%;"></div>
+        </div>
+        <h4>Python</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:68%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME -->
+    <div id="resume" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>My Resume</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia similique cumque impedit consequatur modi repudiandae, quasi dolorem!</p>
+      </div>
+
+      <div class="card card-body py-5">
+        <h3>Where have I worked?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quasi obcaecati, inventore voluptatibus, odit hic libero repellendus tempore neque ratione, eveniet molestias eos.</p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Devmasteres</div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem atque, quae ab reprehenderit.</p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Position: fullstack developer
+              </p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Phone: (444) 444-4444
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="text-muted">
+                Dates: 2015-2017
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">Websites Pro</div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem atque, quae ab reprehenderit.</p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Position: frontend developer
+              </p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Phone: (443) 444-3333
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="text-muted">
+                Dates: 2013-2015
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">One2Three design</div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem atque, quae ab reprehenderit.</p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Position: designer
+              </p>
+              <p class="p-2 bg-dark text-white mb-2">
+                Phone: (444) 435-44674
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="text-muted">
+                Dates: 2010-2013
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="offset-md-3 col-md-6">
+          <a href="#" class="btn btn-outline-light ml-auto btn-block">
+            <i class="fa fa-cloud"></i> Download resume
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('.port-item').click(function() {
+      $('.collapse').collapse('hide');
+    })
+  </script>
 </body>
 </html>

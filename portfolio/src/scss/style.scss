@@ -27,3 +27,7 @@
     padding: 3em !important;
   }
 }
+
+.collapse > .card, .collapsing > .card {
+  border-radius: 0 !important;
+}
